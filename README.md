@@ -5,6 +5,7 @@ WebdriverIO is a Node.js implementation of selenium and an easier library to aut
 ## Installation
 
 Clone this repo and use the node package manager to install the dependencies. All the tests run parallely currently 10 at a time 5 in chrome & firefox.
+Pre-requiste node.js & docker needs to be installed
 
 ```bash
 npm install
