@@ -1,0 +1,28 @@
+{
+  "name": "wdioallure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test_and_report": "npm run test && npm run report",
+    "test_docker_and_report": "npm run test_docker && npm run report",
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "test_docker": "docker-compose up -d && ./node_modules/.bin/wdio wdio.conf.docker.js",
+    "report": "./node_modules/.bin/allure generate --clean && allure open"
+  },
+  "author": "Gurjeet Bains",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/allure-reporter": "^6.3.0",
+    "@wdio/cli": "^6.3.5",
+    "@wdio/junit-reporter": "^6.3.4",
+    "@wdio/local-runner": "^6.3.5",
+    "@wdio/mocha-framework": "^6.3.0",
+    "@wdio/selenium-standalone-service": "^6.1.14",
+    "@wdio/spec-reporter": "^6.3.0",
+    "@wdio/sync": "^6.3.3",
+    "allure-commandline": "^2.13.0",
+    "wdio-docker-service": "^2.4.0"
+  },
+  "devDependencies": {}
+}
